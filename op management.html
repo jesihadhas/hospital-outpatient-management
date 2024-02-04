@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outpatient Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Outpatient Management System</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#patients">Patients</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+            <li><a href="#medical_records">Medical Records</a></li>
+            <li><a href="#billing">Billing</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="patients">
+            <h2>Patients</h2>
+            <!-- Form to add a new patient -->
+            <form id="addPatientForm">
+                <label for="patientName">Name:</label>
+                <input type="text" id="patientName" name="patientName" required>
+                <label for="patientAge">Age:</label>
+                <input type="number" id="patientAge" name="patientAge" required>
+                <button type="submit">Add Patient</button>
+            </form>
+            <!-- Table to display patient information -->
+            <table id="patientTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Patient data will be dynamically populated here -->
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Similar sections for Appointments, Medical Records, Billing -->
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Outpatient Management System</p>
+    </footer>
+</body>
+</html>
